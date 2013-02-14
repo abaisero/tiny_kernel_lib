@@ -1,0 +1,78 @@
+                 #######################
+                #########################
+                ## TINY KERNEL LIBRARY ##
+                #########################
+                 #######################
+
+The makefile contains all the targets you should ever need.
+The targets are:
+    - doc           Builds the Doxugen documentation
+    - <no target>   Compiles the usage binary
+    - debug         Compiles the usage binary (with debug flags)
+    - optim         Compiles the usage binary (with optimization flags)
+    - zip           Compresses the whole directory
+    - clean         Removes all generated files and folders
+
+A brief description follows.
+
+#######
+# doc #
+#######
+
+Execute
+    user@pc$ make doc
+
+This target calls Doxygen to create the documentation for the classes in the library.
+A soft link called doc.html is created in the main folder. Use this to access the documentation.
+
+###############
+# <no target> #
+###############
+
+Execute
+    user@pc$ make <no-target>
+
+This target creates the bin folder and compiles the usage binary.
+
+#########
+# debug #
+#########
+
+Execute
+    user@pc$ make debug
+
+This target creates the bin folder and compiles the usage binary.
+The compilation includes debugging flags.
+
+#########
+# optim #
+#########
+
+Execute
+    user@pc$ make optim
+
+This target creates the bin folder and compiles the usage binary.
+The compilation includes optimization flags.
+
+#######
+# zip #
+#######
+
+Execute
+    user@pc$ make zip
+
+This target compresses the current folder _as is_ into TKL.zip.
+
+#########
+# clean #
+#########
+
+Execute
+    user@pc$ make clean
+
+This target removes all generated folders and files (which include bin/, doc/, doc.html, and others..)
+
+-----------------------------------------------
+
+For questions, contact andrea.baisero@gmail.com
+
